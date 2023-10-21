@@ -16,19 +16,19 @@ namespace Persistencia.Data.Configuration
 
             builder.Property(p => p.IdCliente)
             .HasColumnType("int")
-            .HasColumnType("IdCliente")
+            .HasColumnName("IdCliente")
             .IsRequired()
             .HasMaxLength(10000);
 
             builder.Property(p => p.Nombre)
             .HasColumnType("varchar")
-            .HasColumnType("Nombre")
+            .HasColumnName("Nombre")
             .IsRequired()
             .HasMaxLength(100);
 
             builder.Property(p => p.FechaRegistro)
             .HasColumnType("date")
-            .HasColumnType("FechaRegistro")
+            .HasColumnName("FechaRegistro")
             .IsRequired()
             .HasMaxLength(100);
 

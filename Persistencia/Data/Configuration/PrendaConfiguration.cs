@@ -16,27 +16,27 @@ namespace Persistencia.Data.Configuration
 
             builder.Property(p => p.IdPrenda)
             .HasColumnType("int")
-            .HasColumnType("IdPrenda")
+            .HasColumnName("IdPrenda")
             .HasMaxLength(100)
             .IsUnicode()
             .IsRequired();
             
             builder.Property(p => p.Nombre)
             .HasColumnType("varchar")
-            .HasColumnType("Nombre")
+            .HasColumnName("Nombre")
             .HasMaxLength(100)
             .IsRequired();
 
 
             builder.Property(p => p.ValorUnitCop)
             .HasColumnType("int")
-            .HasColumnType("ValorUnitCop")
+            .HasColumnName("ValorUnitCop")
             .HasMaxLength(100)
             .IsRequired();
 
             builder.Property(p => p.ValorUnitUsd)
             .HasColumnType("int")
-            .HasColumnType("ValorUnitUsd")
+            .HasColumnName("ValorUnitUsd")
             .HasMaxLength(100)
             .IsRequired();
 

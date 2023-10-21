@@ -16,13 +16,13 @@ namespace Persistencia.Data.Configuration
             
             builder.Property(p => p.CantidadProducir)
             .HasColumnType("int")
-            .HasColumnType("CantidadProducir")
+            .HasColumnName("CantidadProducir")
             .IsRequired()
             .HasMaxLength(1000);
 
             builder.Property(p => p.CantidadProducida)
             .HasColumnType("int")
-            .HasColumnType("CantidadProducida")
+            .HasColumnName("CantidadProducida")
             .IsRequired()
             .HasMaxLength(1000);
 

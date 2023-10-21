@@ -17,6 +17,8 @@ namespace Dominio.Entidades
         public TipoProteccion TipoProteccion {get; set;}
         public int IdGeneroFk {get; set;}
         public Genero Genero {get; set;}
+        public ICollection<Insumo> Insumos {get; set;}
+        public ICollection<InsumoPrenda> InsumoPrendas {get; set;}
         public ICollection<DetalleOrden> DetalleOrdenes {get; set;}
         public ICollection<Inventario> Inventarios {get; set;}
 

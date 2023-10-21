@@ -17,6 +17,30 @@ namespace Aplicacion.UnitOfWork
         public IRol _roles;
         public IUsuario _usuarios;
 
+        public ICargo _cargo;
+        public ICliente _cliente;
+        public IColorr _colorr;
+        public IDepartamento _departamento;
+        public IDetalleOrden _detalleOrden;
+        public IDetalleVenta _detalleVenta;
+        public IEmpleado _empleado;
+        public IEmpresa _empresa;
+        public IEstado _estado;
+        public IFormaPago _formaPago;
+        public IGenero _genero;
+        public IInsumo _insumo;
+        public IInventario _inventario;
+        public IMunicipio _municipio;
+        public IOrden _orden;
+        public IPais _pais;
+        public IPrenda _prenda;
+        public IProveedor _proveedor;
+        public ITalla _talla;
+        public ITipoEstado _tipoEstado;
+        public ITipoPersona _tipoPersona;
+        public ITipoProteccion _tipoProteccion;
+        public IVenta _venta;
+
         public IRol Roles 
         {
             get{
@@ -39,6 +63,22 @@ namespace Aplicacion.UnitOfWork
 
             }
         }
+
+
+        public ICargo Cargos
+        {
+            get{
+                if(_cargo == null)
+                {
+                    _cargo = new CargoRepository(context);
+                }
+                return _cargo;
+
+            }
+        }
+
+
+
         
 
         public void Dispose()

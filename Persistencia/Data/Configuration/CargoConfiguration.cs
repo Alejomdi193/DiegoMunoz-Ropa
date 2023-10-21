@@ -16,13 +16,13 @@ namespace Persistencia.Data.Configuration
 
             builder.Property(p => p.Descripcion)
             .HasColumnType("varchar")
-            .HasColumnType("descripcion")
+            .HasColumnName("descripcion")
             .IsRequired()
             .HasMaxLength(100);
 
             builder.Property(p => p.SueldoBase)
             .HasColumnType("int")
-            .HasColumnType("SueldoBase")
+            .HasColumnName("SueldoBase")
             .IsRequired()
             .HasMaxLength(1000);
         }

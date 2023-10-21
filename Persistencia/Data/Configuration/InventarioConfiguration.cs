@@ -17,7 +17,7 @@ namespace Persistencia.Data.Configuration
             
             builder.Property(p => p.CodInv)
             .HasColumnType("varchar")
-            .HasColumnType("CodInv")
+            .HasColumnName("CodInv")
             .IsUnicode()
             .IsRequired()
             .HasMaxLength(100);
@@ -25,13 +25,13 @@ namespace Persistencia.Data.Configuration
 
             builder.Property(p => p.ValorVtaCop)
             .HasColumnType("int")
-            .HasColumnType("ValorVtaCop")
+            .HasColumnName("ValorVtaCop")
             .IsRequired()
             .HasMaxLength(1000);
 
             builder.Property(p => p.ValorVtaUsd)
             .HasColumnType("int")
-            .HasColumnType("ValorVtaUsd")
+            .HasColumnName("ValorVtaUsd")
             .IsRequired()
             .HasMaxLength(1000);
 

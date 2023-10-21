@@ -19,13 +19,13 @@ namespace Persistencia.Data.Configuration
             
             builder.Property(p => p.Nombre)
             .HasColumnType("varchar")
-            .HasColumnType("Nombre")
+            .HasColumnName("Nombre")
             .IsRequired()
             .HasMaxLength(100);
             
             builder.Property(p => p.FechaIngreso)
             .HasColumnType("date")
-            .HasColumnType("FechaIngreso")
+            .HasColumnName("FechaIngreso")
             .IsRequired()
             .HasMaxLength(100);
 

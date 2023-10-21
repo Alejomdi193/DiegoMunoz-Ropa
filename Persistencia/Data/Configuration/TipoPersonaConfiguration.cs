@@ -17,7 +17,7 @@ namespace Persistencia.Data.Configuration
             
             builder.Property(p => p.Descripcion)
             .HasColumnType("varchar")
-            .HasColumnType("Descripcion")
+            .HasColumnName("Descripcion")
             .IsRequired()
             .HasMaxLength(100);
         }

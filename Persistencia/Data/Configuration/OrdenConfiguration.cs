@@ -17,7 +17,7 @@ namespace Persistencia.Data.Configuration
             
             builder.Property(p => p.Fecha)
             .HasColumnType("date")
-            .HasColumnType("Fecha")
+            .HasColumnName("Fecha")
             .IsRequired();
 
             builder.HasOne(p => p.Empleado)
