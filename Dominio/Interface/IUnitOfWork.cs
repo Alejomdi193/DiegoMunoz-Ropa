@@ -11,6 +11,16 @@ namespace Dominio.Interface
 
         IRol Roles { get; }
         IUsuario Usuarios { get; }
+        
+        ICargo Cargos {get;}
+        ICliente Cliente {get;}
+
+        IColorr Colorr {get;}
+
+        IDepartamento Departamento {get; set;}
+
+        IDetalleOrden DetalleOrden{get;}
+
         Task<int> SaveAsync();
     }
 }
