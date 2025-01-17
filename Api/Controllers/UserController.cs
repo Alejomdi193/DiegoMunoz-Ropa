@@ -1,7 +1,6 @@
 using Api.Controllers;
 using Api.Dtos;
 using Api.Services;
-using Aplicacion.UnitOfWork;
 using AutoMapper;
 using Dominio.Interface;
 using Microsoft.AspNetCore.Mvc;
